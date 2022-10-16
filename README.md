@@ -20,7 +20,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Running end-to-end tests
 
-using cypress for end-to-end tests, command is npm run cy:run or npx cypress open
+using cypress for end-to-end tests, command is npm run cy:run or npx cypress open also local server should be up to run tests
 
 ## Further help
 
