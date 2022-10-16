@@ -1,0 +1,16 @@
+.header__container {
+    border-bottom: 30px solid #000;
+    h1 {
+      font-size: 3em;
+      font-family: "oswald-bold";
+      margin: 20px 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .header__container {
+        h1 {
+          font-size: 1.5em;
+        }
+      }
+  }

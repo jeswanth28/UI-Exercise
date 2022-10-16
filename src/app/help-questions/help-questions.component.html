@@ -1,0 +1,26 @@
+<ul>
+  <li *ngFor="let qa of faqsData" class="accordion" (click)="selectedItem(qa)">
+    <div class="accordion__header" [ngClass]="{ 'bg-color': !qa.hidden }">
+      <div class="question__container">
+        <span class="question-id">Q{{ qa.id }}</span>
+        <span class="question">{{ qa.question }}</span>
+      </div>
+      <div class="icon__container">
+        <svg
+          class="svg-rotate__icon transistion-icon"
+          [ngClass]="{ 'transform-icon': !qa.hidden }"
+          width="25px"
+          height="25px"
+          viewBox="0 0 357 357"
+        >
+          <g id="add">
+            <path d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z" />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div *ngIf="!qa.hidden" class="accordian__content">
+      <p>{{ qa.answer }}</p>
+    </div>
+  </li>
+</ul>
